@@ -173,7 +173,7 @@ export async function generateMetadata(
     title: `${metaTitle}`,
   };
 }
-
+ 
 function DashBoard({
   params,
 }: {
