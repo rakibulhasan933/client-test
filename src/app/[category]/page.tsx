@@ -150,7 +150,7 @@ export async function generateMetadata(
   const buildTitle = (params: { category: string }, item: any, locality: string, state: string, subCategoryType: string) => {
     const category = params.category ? params.category : "";
     const name = item?.at(0)?.name
-      ? `${item.at(0).name} ${!locality || !state ? " " : ""}`
+      ? `${item.at(0).name} ${!locality || !state ? "in" : ""}`
       : "";
     const subcategoryTypePart = subCategoryType ? subCategoryType : "";
     const localityPart = locality ? `in ${locality},` : "";
