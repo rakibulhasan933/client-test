@@ -11,6 +11,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Accordion1, AccordionContent1, AccordionItem1, AccordionTrigger1 } from './ui/accordion2';
 
 
 const data = [
@@ -20,7 +21,40 @@ const data = [
             {
 
                 name: "Fittings",
-                subCategoryType: "fitting type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: [],
                 filters: ["fitting type"],
                 meta: "Fitting type in Nigeria"
@@ -29,7 +63,40 @@ const data = [
             {
 
                 name: "Roof and Ceiling",
-                subCategoryType: "roof-ceiling",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: [],
                 filters: ["roof-ceiling"],
                 meta: "Roof-Ceiling Type in Nigeria"
@@ -38,7 +105,40 @@ const data = [
             {
 
                 name: "Paint and Finishing",
-                subCategoryType: "paint-finishing-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: [],
                 filters: ["paint-finishing-type"],
                 meta: "paint-finishing-type in Nigeria"
@@ -47,7 +147,40 @@ const data = [
             {
 
                 name: "Structural Materials",
-                subCategoryType: "structural-materials-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: [],
                 filters: ["structural-materials-type"],
                 meta: "structural-materials-type in Nigeria"
@@ -56,7 +189,40 @@ const data = [
             {
 
                 name: "Electrical Fittings",
-                subCategoryType: "electrical-fittings-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: [],
                 filters: ["electrical-fittings-type"],
                 meta: "electrical-fittings-type in Nigeria"
@@ -65,7 +231,40 @@ const data = [
             {
 
                 name: "Plumbing Materials",
-                subCategoryType: "plumbing-material-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: [],
                 filters: ["plumbing-material-type"],
                 meta: "plumbing-material-type in Nigeria"
@@ -79,7 +278,40 @@ const data = [
             {
 
                 name: "Audio Equipment",
-                subCategoryType: "audio-equipment-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["audio-equipment-brands**"],
                 filters: ["audio-equipment-type", "audio-equipment-brands**"],
                 meta: "1) audio-equipment-brands** +  audio-equipment-type in Nigeria  2.)  audio-equipment-type in Nigeria"
@@ -88,7 +320,40 @@ const data = [
             {
 
                 name: "Cameras",
-                subCategoryType: "camera-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["Camera Brands**"],
                 filters: ["camera-type", "Camera Brands**"],
                 meta: "1). Camera Brands** + Camera-type in Nigeria  2).  Camera-type in Nigeria"
@@ -97,7 +362,40 @@ const data = [
             {
 
                 name: "Computers",
-                subCategoryType: "computers-zype",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["Computer Brands"],
                 filters: ["computers-type", "Computer Brands"],
                 meta: "Computer Brands + Computers-type in Nigeria"
@@ -105,7 +403,40 @@ const data = [
             },
             {
                 name: "Electronics Accessories",
-                subCategoryType: "mobile-type (Electronics Accessory Type)",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: [""],
                 filters: ["mobile-type (Electronics Accessory Type)"],
                 meta: "mobile-type (Electronics Accessory Type) in Nigeria"
@@ -114,7 +445,40 @@ const data = [
             {
 
                 name: "Musical Instruments",
-                subCategoryType: "musical-instruments-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["musical-instrument-brand**"],
                 filters: ["musical-instruments-type", "musical-instrument-brand**"],
                 meta: "musical-instrument-brand** + musical-instruments-type  in Nigeria"
@@ -122,7 +486,40 @@ const data = [
             },
             {
                 name: "Printers and Scanners",
-                subCategoryType: "printer-scanner-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["printer-scanner-brand**"],
                 filters: ["printer-scanner-brand**", "printer-scanner-type"],
                 meta: " 1) printer-scanner-brand** + printer-scanner-type  in Nigeria 2) printer-scanner-type in Nigeria"
@@ -131,7 +528,40 @@ const data = [
             {
 
                 name: "TV Boxes",
-                subCategoryType: "tv-box-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["tv-box-brands**"],
                 filters: ["tv-box-brands**", "tv-box-type"],
                 meta: "tv-box-brands** in Nigeria"
@@ -139,7 +569,40 @@ const data = [
             {
 
                 name: "TVs and DVD",
-                subCategoryType: "tv-dvd-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["Tv Brands"],
                 filters: ["Tv Brands", "tv-dvd-type"],
                 meta: "1)Tv Brands +  tv-dvd-type in Nigeria 2) tv-dvd-type in Nigeria"
@@ -147,7 +610,40 @@ const data = [
             {
 
                 name: "Video Games and Consoles",
-                subCategoryType: "video-games-console-type",
+                subCategoryType: [
+                    "Acoustic Panels ",
+                    "Amplifiers ",
+                    "Audio Interfaces",
+                    "Audio Limiters ",
+                    "Cassette Players ",
+                    "CD Players",
+                    "DJ Controllers",
+                    "DJ Mixers",
+                    "DJ Tables Stands",
+                    "Drum Machines",
+                    "Equalizers",
+                    "Hi - Fi Systems",
+                    "Home Theater Systems",
+                    "Karaoke ",
+                    "Loudspeakers",
+                    "Megaphones",
+                    "Microphones",
+                    "Midi Controllers",
+                    "MP3 Players",
+                    "Music Mixers",
+                    "PA Systems",
+                    "Power Sequencers",
+                    "Radios ",
+                    "Receivers ",
+                    "Sound Systems",
+                    "Soundcards",
+                    "Speakers",
+                    "Studio Monitors",
+                    "Subwoofers",
+                    "Turntables",
+                    "Voice Recorders",
+                    "Walkie Talkies"
+                ],
                 brand: ["Tv Brands"],
                 filters: ["video-games-console-type", "tv-dvd-type"],
                 meta: "video-games-console-type in Nigeria"
@@ -159,6 +655,16 @@ const data = [
 const state = ["Abia", "Abuja", "Adamawa", "Akwa Ebom", "Bauchi"];
 
 const locality = ["Aba North", "Aba South", "Bende", "Ekwuano", "Isicala Ngwa North"];
+
+export interface ISubCategoryProps {
+    name: string,
+    subCategoryType: string[],
+    brand: string[],
+    filters: string[],
+    meta: string,
+};
+
+
 
 function SideBar({ params }: {
     params: {
@@ -176,7 +682,7 @@ function SideBar({ params }: {
             params.delete("subcategory");
         }
         replace(`${pathname}?${params.toString()}`);
-    }, 300);
+    }, 100);
     const handleState = useDebouncedCallback((term: string) => {
         const params = new URLSearchParams(searchParams);
         if (term) {
@@ -185,7 +691,7 @@ function SideBar({ params }: {
             params.delete("state");
         }
         replace(`${pathname}?${params.toString()}`);
-    }, 300);
+    }, 100);
     const handleLocality = useDebouncedCallback((term: string) => {
         const params = new URLSearchParams(searchParams);
         if (term) {
@@ -194,8 +700,18 @@ function SideBar({ params }: {
             params.delete("locality");
         }
         replace(`${pathname}?${params.toString()}`);
-    }, 300);
-    const sub = searchParams.get('subcategory');
+    }, 100);
+    const handleSubCategoryType = useDebouncedCallback((term: string) => {
+        const params = new URLSearchParams(searchParams);
+        if (term) {
+            params.set("subCategoryType", term);
+        } else {
+            params.delete("subCategoryType");
+        }
+        replace(`${pathname}?${params.toString()}`);
+    }, 100);
+
+    const sub = searchParams.get('subCategoryType');
     const localityList = searchParams.get('locality');
 
     const result = data.filter(item => item.category === params.category)
@@ -234,14 +750,33 @@ function SideBar({ params }: {
                         <input type="range" min="0" max="10000" className="w-full mt-2" />
                     </div>
                     <div>
-                        <Accordion type="single" collapsible>
+                        <Accordion type="single" defaultValue={sub ? "item-2" : "item-1"} collapsible>
                             <div className="mb-4">
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger><h3 className="mb-2 text-sm font-semibold">Sub Categories</h3></AccordionTrigger>
                                     <AccordionContent>
                                         <div className=" flex flex-col gap-3">
                                             {
-                                                subCategory?.map((item, index) => <Button key={index} onClick={() => handleSubCategory(item.name)}>{item.name}</Button>)
+                                                subCategory?.map((item, index) =>
+                                                    <>
+                                                        <Accordion1 type="single" collapsible>
+                                                            <AccordionItem1 key={index} value={`item-${index}`}>
+                                                                <AccordionTrigger1><Button key={index} onClick={() => handleSubCategory(item.name)}>{item.name}</Button></AccordionTrigger1>
+                                                                <AccordionContent1>
+                                                                    <div className="grid grid-cols-2 gap-2">
+                                                                        {
+                                                                            item.subCategoryType.map((type, index) => (
+                                                                                <div key={index}>
+                                                                                    <AccordionTrigger1><Button variant={"outline"} size={"sm"} key={index} onClick={() => handleSubCategoryType(type)}>{type}</Button></AccordionTrigger1>
+                                                                                </div>
+                                                                            ))
+                                                                        }
+                                                                    </div>
+                                                                </AccordionContent1>
+                                                            </AccordionItem1>
+                                                        </Accordion1>
+                                                    </>
+                                                )
                                             }
 
                                         </div>
