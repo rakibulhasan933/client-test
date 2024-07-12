@@ -5,6 +5,13 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { useSearchParams, usePathname, useRouter } from 'next/navigation'
 import { useDebouncedCallback } from "use-debounce"
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
+
 
 const data = [
     {
@@ -189,7 +196,7 @@ function SideBar({ params }: {
         replace(`${pathname}?${params.toString()}`);
     }, 300);
     const sub = searchParams.get('subcategory');
-    const State = searchParams.get('state');
+    const localityList = searchParams.get('locality');
 
     const result = data.filter(item => item.category === params.category)
     const subCategory = result.at(0)?.subcategory;
@@ -226,40 +233,60 @@ function SideBar({ params }: {
                         </div>
                         <input type="range" min="0" max="10000" className="w-full mt-2" />
                     </div>
-                    <div className="mb-4">
-                        <h3 className="mb-2 text-sm font-semibold">Sub Categories</h3>
-                        <div className=" flex flex-col gap-3">
+                    <div>
+                        <Accordion type="single" collapsible>
+                            <div className="mb-4">
+                                <AccordionItem value="item-1">
+                                    <AccordionTrigger><h3 className="mb-2 text-sm font-semibold">Sub Categories</h3></AccordionTrigger>
+                                    <AccordionContent>
+                                        <div className=" flex flex-col gap-3">
+                                            {
+                                                subCategory?.map((item, index) => <Button key={index} onClick={() => handleSubCategory(item.name)}>{item.name}</Button>)
+                                            }
+
+                                        </div>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </div>
+
+                            {/* locality */}
+
                             {
-                                subCategory?.map((item, index) => <Button key={index} onClick={() => handleSubCategory(item.name)}>{item.name}</Button>)
+                                sub && <div className="mb-4">
+                                    <AccordionItem value="item-2">
+                                        <AccordionTrigger><h3 className="mb-2 text-sm font-semibold">Locality</h3></AccordionTrigger>
+                                        <AccordionContent>
+                                            <div className=" flex flex-col gap-3">
+                                                {
+                                                    locality.map((item, index) => <Button key={index} onClick={() => handleLocality(item)}>{item}</Button>)
+                                                }
+
+                                            </div>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                </div>
                             }
+                            {/* State */}
+                            {
+                                localityList && <div className="mb-4">
 
-                        </div>
+                                    <AccordionItem value="item-3">
+                                        <AccordionTrigger><h3 className="mb-2 text-sm font-semibold">State</h3></AccordionTrigger>
+                                        <AccordionContent>
+                                            <div className=" flex flex-col gap-3">
+                                                {
+                                                    state.map((item, index) => <Button key={index} onClick={() => handleState(item)}>{item}</Button>)
+                                                }
+
+                                            </div>
+                                        </AccordionContent>
+                                    </AccordionItem>
+
+                                </div>
+                            }
+                        </Accordion>
                     </div>
-                    {/* State */}
-                    {
-                        sub && <div className="mb-4">
-                            <h3 className="mb-2 text-sm font-semibold">State</h3>
-                            <div className=" flex flex-col gap-3">
-                                {
-                                    state.map((item, index) => <Button key={index} onClick={() => handleState(item)}>{item}</Button>)
-                                }
-
-                            </div>
-                        </div>
-                    }
-                    {/* locality */}
-                    {
-                        State && <div className="mb-4">
-                            <h3 className="mb-2 text-sm font-semibold">Locality</h3>
-                            <div className=" flex flex-col gap-3">
-                                {
-                                    locality.map((item, index) => <Button key={index} onClick={() => handleLocality(item)}>{item}</Button>)
-                                }
-
-                            </div>
-                        </div>
-                    }
-                </aside>
+                </aside >
                 <section className="flex-1">
                     <div className="mb-4 text-sm text-muted-foreground">Home Building Materials</div>
                     <div className="grid grid-cols-3 gap-4">
@@ -304,8 +331,8 @@ function SideBar({ params }: {
                         </Card>
                     </div>
                 </section>
-            </main>
-        </div>
+            </main >
+        </div >
     )
 }
 
