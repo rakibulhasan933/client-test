@@ -136,44 +136,23 @@ export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const subcategory = searchParams.subcategory;
+  const subcategory = searchParams.subcategory || "";
   const category = params.category;
   const result = await data.filter((item) => item.category === params.category);
   const subCategoryList = result.at(0)?.subcategory;
   const item = await subCategoryList?.filter(
     (item) => item.name === subcategory
   );
-  const locality = searchParams.locality;
-  const state = searchParams.state;
-  const subCategoryType = searchParams.subCategoryType;
+  const locality = searchParams.locality || "";
+  const state = searchParams.state || "";
+  console.log(state)
+  const subCategoryType = searchParams.subCategoryType || "";
 
-  const buildTitle = (params: { category: string }, item: any, locality: string, state: string, subCategoryType: string) => {
-    const category = params.category ? params.category : "";
-    const name = item?.at(0)?.name
-      ? `${item.at(0).name} ${!locality || !state ? "in" : ""}`
-      : "";
-    const subcategoryTypePart = subCategoryType ? subCategoryType : "";
-    const localityPart = locality ? `in ${locality},` : "";
-    const statePart = state ? `${state},` : "";
-    const countryPart = "Nigeria";
+  const title = ` ${category} ${item?.at(0)?.name ? item?.at(0)?.name : ""} ${subCategoryType ? subCategoryType : ''} ${subCategoryType ? subCategoryType : " "} ${locality ? "in" : ""}   ${locality}  ${state || locality ? "," : ""} ${state} ${state ? "," : ""}   ${state || locality ? "" : "in"} Nigeria `;
 
-    const titleParts = [
-      category,
-      name,
-      subcategoryTypePart,
-      localityPart,
-      statePart,
-      countryPart,
-    ].filter((part) => part);
-
-    const title = titleParts.join(" ");
-
-    return title.trim();
-  };
-  const metaTitle = buildTitle(params, item, subCategoryType, locality, state);
 
   return {
-    title: `${metaTitle}`,
+    title,
   };
 }
 
