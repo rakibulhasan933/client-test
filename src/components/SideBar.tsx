@@ -12,6 +12,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Accordion1, AccordionContent1, AccordionItem1, AccordionTrigger1 } from './ui/accordion2';
+import Link from 'next/link';
 
 
 const data = [
@@ -721,7 +722,9 @@ function SideBar({ params }: {
             <header className="flex items-center justify-between p-4 border-b">
                 <div className="flex items-center gap-2">
                     {/* <Image src="/placeholder.svg" alt="Logo" className="h-10 w-10" /> */}
-                    <span className="text-2xl font-bold">NAIJA</span>
+                    <span className="text-2xl font-bold">
+                        <Link href="/">Home</Link>
+                    </span>
                 </div>
                 <div className="flex items-center gap-4">
                     <input type="search" placeholder="Search" className="px-4 py-2 border rounded-md" />
