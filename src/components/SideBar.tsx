@@ -770,7 +770,7 @@ function SideBar({ params }: {
                                                                         {
                                                                             item.subCategoryType.map((type, index) => (
                                                                                 <div key={index}>
-                                                                                    <AccordionTrigger1><Button variant={"outline"} size={"sm"} key={index} onClick={() => handleSubCategoryType(type)}>{type}</Button></AccordionTrigger1>
+                                                                                    <AccordionTrigger1><Button className={`${sub === type ? " bg-orange-500" : ""}`} variant={"outline"} size={"sm"} key={index} onClick={() => handleSubCategoryType(type)}>{type}</Button></AccordionTrigger1>
                                                                                 </div>
                                                                             ))
                                                                         }
