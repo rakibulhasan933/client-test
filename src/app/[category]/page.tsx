@@ -145,12 +145,14 @@ export async function generateMetadata(
   );
   const locality = searchParams.locality;
   const state = searchParams.state;
+  const subCategoryType = searchParams.subCategoryType;
 
-  const buildTitle = (params: any, item: any, locality: any, state: any) => {
+  const buildTitle = (params: { category: string }, item: any, locality: string, state: string, subCategoryType: string) => {
     const category = params.category ? params.category : "";
     const name = item?.at(0)?.name
-      ? `${item.at(0).name} ${!locality || !state ? "in" : ""}`
+      ? `${item.at(0).name} ${!locality || !state ? " " : ""}`
       : "";
+    const subcategoryTypePart = subCategoryType ? subCategoryType : "";
     const localityPart = locality ? `in ${locality},` : "";
     const statePart = state ? `${state},` : "";
     const countryPart = "Nigeria";
@@ -158,6 +160,7 @@ export async function generateMetadata(
     const titleParts = [
       category,
       name,
+      subcategoryTypePart,
       localityPart,
       statePart,
       countryPart,
@@ -167,13 +170,13 @@ export async function generateMetadata(
 
     return title.trim();
   };
-  const metaTitle = buildTitle(params, item, locality, state);
+  const metaTitle = buildTitle(params, item, subCategoryType, locality, state);
 
   return {
     title: `${metaTitle}`,
   };
 }
- 
+
 function DashBoard({
   params,
 }: {
